@@ -1,6 +1,6 @@
 {
   "name": "payload-paste-as-markdown",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Payload CMS Lexical editor feature for pasting Markdown via a toolbar button, slash command, or drawer.",
   "license": "MIT",
   "homepage": "https://github.com/kelvinleehk/payload-paste-as-markdown#readme",
@@ -50,7 +50,6 @@
     "build:swc": "swc ./src -d ./dist --config-file .swcrc --strip-leading-paths",
     "build:types": "tsc --emitDeclarationOnly --outDir dist",
     "clean": "rimraf dist *.tsbuildinfo",
-    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
