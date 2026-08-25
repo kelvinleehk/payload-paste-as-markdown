@@ -1,5 +1,7 @@
 # payload-paste-as-markdown
 
+![Screenshot of Paste-As-Markdown](assets/screenshot-paste-as-markdown.png)
+
 A reusable Payload CMS 3.x Lexical editor feature that lets authors paste raw Markdown into the rich-text editor via a toolbar button, slash command, or keyboard-free drawer.
 
 ## Compatibility
