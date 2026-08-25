@@ -1,20 +1,42 @@
 {
-  "name": "paste-as-markdown",
+  "name": "payload-paste-as-markdown",
   "version": "1.0.0",
   "description": "Payload CMS Lexical editor feature for pasting Markdown via a toolbar button, slash command, or drawer.",
   "license": "MIT",
+  "homepage": "https://github.com/kelvinleehk/payload-paste-as-markdown#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kelvinleehk/payload-paste-as-markdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kelvinleehk/payload-paste-as-markdown/issues"
+  },
+  "keywords": [
+    "payload",
+    "payload-plugin",
+    "payloadcms",
+    "payload-cms",
+    "lexical",
+    "markdown",
+    "richtext",
+    "rich-text"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.20.0"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
       "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
       "default": "./dist/index.js"
     },
     "./client": {
-      "import": "./dist/exports/client.js",
       "types": "./dist/exports/client.d.ts",
+      "import": "./dist/exports/client.js",
       "default": "./dist/exports/client.js"
     }
   },
