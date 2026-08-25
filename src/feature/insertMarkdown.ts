@@ -1,4 +1,4 @@
-import { $convertFromMarkdownString } from '@payloadcms/richtext-lexical'
+import { $convertFromMarkdownString } from '@payloadcms/richtext-lexical/lexical/markdown'
 import type { Transformer } from '@payloadcms/richtext-lexical/lexical/markdown'
 import type { LexicalEditor, LexicalNode } from '@payloadcms/richtext-lexical/lexical'
 import {
