@@ -1,6 +1,15 @@
-# paste-as-markdown
+# payload-paste-as-markdown
 
 A reusable Payload CMS 3.x Lexical editor feature that lets authors paste raw Markdown into the rich-text editor via a toolbar button, slash command, or keyboard-free drawer.
+
+## Compatibility
+
+- **Payload CMS:** 3.x only. This package is not compatible with Payload 2.x.
+- **React:** 19.x (via peer dependencies).
+
+> If you're browsing this repository on GitHub, please tag it with the [`payload-plugin`](https://github.com/topics/payload-plugin) topic so it surfaces in Payload community plugin listings.
+
+This is a **Lexical editor feature** rather than a top-level `buildConfig` plugin, so it is configured inside `lexicalEditor({ features: [...] })`.
 
 ## Features
 
@@ -13,11 +22,11 @@ A reusable Payload CMS 3.x Lexical editor feature that lets authors paste raw Ma
 ## Installation
 
 ```bash
-npm install paste-as-markdown
+npm install payload-paste-as-markdown
 # or
-pnpm add paste-as-markdown
+pnpm add payload-paste-as-markdown
 # or
-yarn add paste-as-markdown
+yarn add payload-paste-as-markdown
 ```
 
 This package expects `payload`, `@payloadcms/richtext-lexical`, `@payloadcms/ui`, `react`, and `react-dom` to already be installed in your project.
@@ -27,7 +36,9 @@ This package expects `payload`, `@payloadcms/richtext-lexical`, `@payloadcms/ui`
 Import the server feature and add it to the `features` array of any `lexicalEditor`:
 
 ```ts
-import { MarkdownPasteFeature } from 'paste-as-markdown'
+import { MarkdownPasteFeature } from 'payload-paste-as-markdown'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import type { CollectionConfig } from 'payload'
 
 export const Posts: CollectionConfig = {
   slug: 'posts',
