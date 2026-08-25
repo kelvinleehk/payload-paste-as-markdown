@@ -1,0 +1,20 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true
+    },
+    "target": "es2022",
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    },
+    "baseUrl": "."
+  },
+  "module": {
+    "type": "es6"
+  },
+  "isModule": true,
+  "minify": false
+}
