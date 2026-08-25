@@ -35,7 +35,11 @@ This package expects `payload`, `@payloadcms/richtext-lexical`, `@payloadcms/ui`
 
 ## Usage
 
-Import the server feature and add it to the `features` array of any `lexicalEditor`:
+Import the server feature and add it to the `features` array of any `lexicalEditoThe published npm package still has "prepare": "npm run build" in its package.json. That causes
+ pnpm to rebuild it on every install even though dist/ is already published. For a cleaner consumer
+ experience, remove "prepare" from the plugin's package.json and keep only "prepublishOnly", then
+ publish a patch version (1.0.1). Consumers will then install instantly without needing
+ approve-builds.r`:
 
 ```ts
 import { MarkdownPasteFeature } from 'payload-paste-as-markdown'
@@ -83,3 +87,4 @@ npx payload generate:importmap
 ## License
 
 MIT
+Sponsored by: [Onion Creative](https://www.onioncreative.com)
